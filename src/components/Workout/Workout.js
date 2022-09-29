@@ -8,7 +8,9 @@ const Workout = (props) => {
       <img src={img} alt="" />
       <h2>{title}</h2>
       <h4>Time Required: {timeRequired}s</h4>
-      <button>Add to list</button>
+      <button onClick={() => props.handleAddToList(props.workout)}>
+        Add to list
+      </button>
     </div>
   );
 };

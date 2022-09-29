@@ -12,13 +12,21 @@ const Main = () => {
       .then((data) => setWorkouts(data));
   }, []);
 
+  const handleAddToList = (workout) => {
+    console.log(workout);
+  };
+
   return (
     <div className="main-container">
       <div className="workout-container">
         <h4>Select Today's Workouts:</h4>
         <div className="workout-card-container">
           {workouts.map((workout) => (
-            <Workout key={workout.id} workout={workout}></Workout>
+            <Workout
+              key={workout.id}
+              workout={workout}
+              handleAddToList={handleAddToList}
+            ></Workout>
           ))}
         </div>
       </div>
