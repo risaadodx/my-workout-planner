@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Main.css";
+import Workout from "../Workout/Workout";
 
 const Main = () => {
   const [workouts, setWorkouts] = useState([]);
@@ -14,6 +15,9 @@ const Main = () => {
     <div className="main-container">
       <div className="workout-container">
         <h4>Select Today's Workouts:{workouts.length}</h4>
+        {workouts.map((workout) => (
+          <Workout key={workout.id} workout={workout}></Workout>
+        ))}
       </div>
       <div className="activity-container">
         <h4>Activity</h4>
