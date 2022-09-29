@@ -5,7 +5,7 @@ import Activity from "../activity/Activity";
 
 const Main = () => {
   const [workouts, setWorkouts] = useState([]);
-  const [list, setList] = useState[];
+  const [list, setList] = useState([]);
 
   useEffect(() => {
     fetch("workouts.json")
@@ -15,7 +15,7 @@ const Main = () => {
 
   const handleAddToList = (workout) => {
     const newList = [...list, workout];
-    setList(newList)
+    setList(newList);
   };
 
   return (

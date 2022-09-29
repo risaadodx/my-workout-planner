@@ -1,7 +1,13 @@
 import React from "react";
 import "./Activity.css";
 import ExerciseDetails from "../exerciseDetails/ExerciseDetails";
-const Activity = () => {
+const Activity = (props) => {
+  const { list } = props;
+
+  let total = 0;
+  for (const workout of list) {
+    total = total + workout.timeRequired;
+  }
   return (
     <div className="profile">
       <h3>Khaled Bin Wahid</h3>
