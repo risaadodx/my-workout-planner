@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Main.css";
 import Workout from "../Workout/Workout";
 import Activity from "../activity/Activity";
+import Questions from "../questions/Questions";
 
 const Main = () => {
   const [workouts, setWorkouts] = useState([]);
@@ -35,6 +36,7 @@ const Main = () => {
       <div className="activity-container">
         <Activity></Activity>
       </div>
+      <Questions></Questions>
     </div>
   );
 };

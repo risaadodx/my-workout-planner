@@ -15,6 +15,7 @@
   background-color: rgb(246, 240, 218);
   padding: 15px;
 }
+
 @media only screen and (max-width: 600px) {
   .main-container {
     display: block;
