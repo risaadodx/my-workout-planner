@@ -1,0 +1,14 @@
+.workout-container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.main {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+.workouts-cards {
+}
+.activity-container {
+  background-color: wheat;
+  padding: 10px;
+}
