@@ -1,12 +1,14 @@
 import React from "react";
+import "./Workout.css";
 
 const Workout = (props) => {
   const { img, title, timeRequired } = props.workout;
   return (
-    <div>
+    <div className="workout-card">
       <img src={img} alt="" />
       <h2>{title}</h2>
       <h4>Time Required: {timeRequired}s</h4>
+      <button>Add to list</button>
     </div>
   );
 };

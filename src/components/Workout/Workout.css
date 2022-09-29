@@ -1,0 +1,19 @@
+.workout-card {
+  background-color: rgb(246, 240, 218);
+  padding: 15px;
+  border-radius: 10px;
+}
+.workout-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.workout-card button {
+  padding: 10px 20px;
+  width: 100%;
+  background-color: rgb(68, 68, 244);
+  color: white;
+  font-size: medium;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+}

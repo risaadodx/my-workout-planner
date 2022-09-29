@@ -15,9 +15,11 @@ const Main = () => {
     <div className="main-container">
       <div className="workout-container">
         <h4>Select Today's Workouts:{workouts.length}</h4>
-        {workouts.map((workout) => (
-          <Workout key={workout.id} workout={workout}></Workout>
-        ))}
+        <div className="workout-card-container">
+          {workouts.map((workout) => (
+            <Workout key={workout.id} workout={workout}></Workout>
+          ))}
+        </div>
       </div>
       <div className="activity-container">
         <h4>Activity</h4>

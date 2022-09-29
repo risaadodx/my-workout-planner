@@ -1,10 +1,17 @@
 .main-container {
   display: grid;
   grid-template-columns: 4fr 1fr;
+  gap: 140px;
 }
 .workout-container {
   margin-left: 10%;
 }
+.workout-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
 .activity-container {
-  background-color: antiquewhite;
+  background-color: rgb(246, 240, 218);
+  padding: 15px;
 }
