@@ -8,10 +8,25 @@
 }
 .workout-card-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 40px;
 }
 .activity-container {
   background-color: rgb(246, 240, 218);
   padding: 15px;
+}
+@media only screen and (max-width: 600px) {
+  .main-container {
+    display: block;
+  }
+  .workout-card-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+  .workout-container {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 60px;
+  }
 }
