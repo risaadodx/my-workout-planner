@@ -1,5 +1,6 @@
 import React from "react";
 import "./Activity.css";
+import ExerciseDetails from "../exerciseDetails/ExerciseDetails";
 const Activity = () => {
   return (
     <div className="profile">
@@ -23,12 +24,16 @@ const Activity = () => {
         <h3>Add A Break</h3>
         <div className="add-break-info">
           <div className="break-time">10s</div>
-          <div className="break-time">10s</div>
-          <div className="break-time">10s</div>
-          <div className="break-time">10s</div>
-          <div className="break-time">10s</div>
+          <div className="break-time">20s</div>
+          <div className="break-time">30s</div>
+          <div className="break-time">40s</div>
+          <div className="break-time">50s</div>
         </div>
       </div>
+      <div>
+        <ExerciseDetails></ExerciseDetails>
+      </div>
+      <button>Activity complited</button>
     </div>
   );
 };
