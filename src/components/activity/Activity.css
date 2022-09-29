@@ -1,0 +1,35 @@
+.profile {
+  text-align: center;
+  line-height: 5px;
+}
+.profile-info {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+.add-break {
+  margin-top: 50px;
+  text-align: left;
+}
+.add-break-info {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+.break-time {
+  padding: 15px;
+  background-color: antiquewhite;
+  border-radius: 50px;
+}
+.break-time:hover {
+  padding: 15px;
+  color: white;
+  background-color: rgb(45, 197, 45);
+  border-radius: 50px;
+}

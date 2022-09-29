@@ -17,3 +17,6 @@
   border: none;
   border-radius: 5px;
 }
+.workout-card button:hover {
+  background-color: rgb(45, 197, 45);
+}
