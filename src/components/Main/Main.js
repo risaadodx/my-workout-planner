@@ -5,7 +5,7 @@ import Activity from "../activity/Activity";
 
 const Main = () => {
   const [workouts, setWorkouts] = useState([]);
-  const [list, setList] = useState([]);
+  const [cart, setCart] = useState([]);
 
   useEffect(() => {
     fetch("workouts.json")
@@ -13,9 +13,9 @@ const Main = () => {
       .then((data) => setWorkouts(data));
   }, []);
 
-  const handleAddToList = (workout) => {
-    const newList = [...list, workout];
-    setList(newList);
+  const handleAddToCart = (workout) => {
+    const newCart = [...cart, workout];
+    setCart(newCart);
   };
 
   return (
@@ -27,7 +27,7 @@ const Main = () => {
             <Workout
               key={workout.id}
               workout={workout}
-              handleAddToList={handleAddToList}
+              handleAddToCart={handleAddToCart}
             ></Workout>
           ))}
         </div>

@@ -1,13 +1,19 @@
 import React from "react";
 import "./Activity.css";
 import ExerciseDetails from "../exerciseDetails/ExerciseDetails";
-const Activity = (props) => {
-  const { list } = props;
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-  let total = 0;
-  for (const workout of list) {
-    total = total + workout.timeRequired;
-  }
+const notify = () => toast("Done!");
+const Activity = (props) => {
+  const { cart } = props;
+
+  console.log(cart);
+
+  //let total = 0;
+  //for (const workout of cart) {
+  // total = total + workout.timeRequired;
+  //}
   return (
     <div className="profile">
       <h3>Khaled Bin Wahid</h3>
@@ -39,7 +45,8 @@ const Activity = (props) => {
       <div>
         <ExerciseDetails></ExerciseDetails>
       </div>
-      <button>Activity complited</button>
+      <button onClick={notify}>Activity complited</button>
+      <ToastContainer />
     </div>
   );
 };
